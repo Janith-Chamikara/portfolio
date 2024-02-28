@@ -2,7 +2,7 @@ import { FC, useRef, useState } from "react";
 import Reveal from "../animated/Reveal";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { FieldValues, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import "react-toastify/dist/ReactToastify.css";
@@ -27,7 +27,7 @@ const Contact: FC = () => {
   const ref = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLFormElement>(null);
   const isInView = useInView(ref, { amount: 0.8 });
-  const sendEmail = async (data: FieldValues) => {
+  const sendEmail = async () => {
     setIsLoading(true);
 
     try {

@@ -16,6 +16,8 @@ import empowerAcademy from "./Blue Illustration Digital Marketing Strategy YouTu
 import letsChat from "./maxresdefault.webp";
 import { FaPython } from "react-icons/fa";
 import { TbBrandCpp } from "react-icons/tb";
+import { SiTypescript } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 export const navLinks = [
   { name: "About", to: "about" },
@@ -47,6 +49,8 @@ export const icons = [
   { name: "Tailwind CSS", icon: SiTailwindcss },
   { name: "Chakra UI", icon: SiChakraui },
   { name: "React", icon: FaReact },
+  { name: "TypeScript", icon: SiTypescript },
+  { name: "Framer Motion", icon: TbBrandFramerMotion },
   { name: "Redis", icon: DiRedis },
   { name: "Cloudinary", icon: CiCloud },
   { name: "Stripe", icon: FaStripe },
@@ -64,14 +68,16 @@ export const projects = [
       "https://www.linkedin.com/posts/janith-chamikara_empoweracademy-mernstack-activity-7167417905733718016-fGqK?utm_source=share&utm_medium=member_desktop",
     yt: "https://youtu.be/wwZABPAmIVM?si=HWfEZo9rdA6_PLHZ",
     techstack: [
-      {name:"React", icon: FaReact },
-      {name:"ChakraUI", icon: SiChakraui },
-      {name:"Stripe", icon: FaStripe },
-      {name:"Cloudinary", icon: CiCloud },
-      {name:"NodeJs", icon: FaNodeJs },
-      {name:"Redis", icon: DiRedis },
-      {name:"JWT", icon: SiJsonwebtokens },
-      {name:"MongoDB", icon: SiMongodb },
+      { name: "React", icon: FaReact },
+      { name: "ChakraUI", icon: SiChakraui },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "Framer Motion", icon: TbBrandFramerMotion },
+      { name: "Stripe", icon: FaStripe },
+      { name: "Cloudinary", icon: CiCloud },
+      { name: "NodeJs", icon: FaNodeJs },
+      { name: "Redis", icon: DiRedis },
+      { name: "JWT", icon: SiJsonwebtokens },
+      { name: "MongoDB", icon: SiMongodb },
     ],
   },
   {
@@ -85,9 +91,9 @@ export const projects = [
     github:
       "https://www.youtube.com/redirect?event=comments&redir_token=QUFFLUhqbTlLYnhHUWlQZmNpTDhrNXRBdi1tdjZqbXM2UXxBQ3Jtc0trazRzcVhZbjROeHFxX3hBSXAzbm5TQ2ZtR3JtUzRlR0NhelVIdThJUjJUcjVwNThoX1d1MXNJdllnaGUwM29OR3g1Wmd5V1lVMWRKeEotVE9kY1l3d1VkUVhvVXBlMmNBek1jamdDUzkxaDkxdVA3QQ&q=https%3A%2F%2Fgithub.com%2FJanith-Chamikara%2Fchat-app-beta.git&stzid=UgyxgIqZTHl2_ceJzKN4AaABAg",
     techstack: [
-      {name:"React", icon: FaReact },
-      {name:"Tailwind", icon: SiTailwindcss },
-      {name:"FireBase", icon: IoLogoFirebase },
+      { name: "React", icon: FaReact },
+      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "FireBase", icon: IoLogoFirebase },
     ],
   },
 ];
