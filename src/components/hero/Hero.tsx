@@ -27,7 +27,7 @@ const Hero: FC = () => {
 
               <Reveal width="fit-content" className="mx-auto">
                 <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-                  An aspiring engineer at the University of Ruhuna, Sri Lanka,
+                  An aspiring engineering undergraduate at the University of Ruhuna, Sri Lanka,
                   deeply interested in web development. Dedicated to simplicity,
                   innovation, and ongoing advancement, I possess strong skills
                   in the latest web development technologies, crafting engaging
