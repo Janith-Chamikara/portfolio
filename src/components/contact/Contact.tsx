@@ -108,11 +108,10 @@ const Contact: FC = () => {
             }}
             initial="initial"
             animate={isInView && "animate"}
-            className="absolute -z-1 top-0 left-0 stroke-[#6953a1]"
+            className="absolute mx-auto -z-1 top-0 left-0 stroke-[#6953a1]"
           >
             <svg
-              width="450px"
-              height="450px"
+              className=" w-[300px] h-[300px] md:w-[450px] md:h-[450px]"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >

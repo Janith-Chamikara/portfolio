@@ -15,7 +15,7 @@ const Hero: FC = () => {
         >
           <source src={blackHoleVideo} type="video/webm" />
         </video>
-        <Meteors number={30} />
+
         <div className="w-[80%] mx-auto mt-[100px] z-20">
           <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
             <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
@@ -24,14 +24,14 @@ const Hero: FC = () => {
                   Hey, I am Janith.
                 </h1>
               </Reveal>
-
+              <Meteors number={30} />
               <Reveal width="fit-content" className="mx-auto">
                 <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-                  An aspiring engineering undergraduate at the University of Ruhuna, Sri Lanka,
-                  deeply interested in web development. Dedicated to simplicity,
-                  innovation, and ongoing advancement, I possess strong skills
-                  in the latest web development technologies, crafting engaging
-                  digital experiences.
+                  An aspiring engineering undergraduate at the University of
+                  Ruhuna, Sri Lanka, deeply interested in web development.
+                  Dedicated to simplicity, innovation, and ongoing advancement,
+                  I possess strong skills in the latest web development
+                  technologies, crafting engaging digital experiences.
                 </p>
               </Reveal>
               <div className="mt-[20px] mx-auto  max-w-[200px] flex flex-row gap-2 justify-center items-center text-sm md:text:lg">
