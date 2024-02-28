@@ -1,4 +1,4 @@
-import { FC, useRef } from "react";
+import { FC, useRef, useState } from "react";
 import Reveal from "../animated/Reveal";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
@@ -7,7 +7,7 @@ import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
-import {  Zoom } from 'react-toastify';
+import { Zoom } from "react-toastify";
 const formSchema = z.object({
   name: z
     .string()
@@ -17,6 +17,7 @@ const formSchema = z.object({
 });
 
 const Contact: FC = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const {
     register,
     reset,
@@ -27,7 +28,7 @@ const Contact: FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const isInView = useInView(ref, { amount: 0.8 });
   const sendEmail = async (data: FieldValues) => {
-    console.log(data);
+    setIsLoading(true);
 
     try {
       await emailjs.sendForm(
@@ -38,8 +39,9 @@ const Contact: FC = () => {
           publicKey: "HFyOUor3wvTUeJByW",
         }
       );
+      setIsLoading(false);
       toast.success("Email sended successfully.", {
-        className:"bg-transparent backdrop-blur-xl",
+        className: "bg-transparent backdrop-blur-xl",
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -48,12 +50,13 @@ const Contact: FC = () => {
         draggable: true,
         progress: undefined,
         theme: "dark",
-        transition:Zoom
+        transition: Zoom,
       });
       reset();
     } catch (err) {
+      setIsLoading(false);
       toast.error("Error occured :(", {
-        className:"bg-transparent backdrop-blur-xl",
+        className: "bg-transparent backdrop-blur-xl",
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -62,7 +65,7 @@ const Contact: FC = () => {
         draggable: true,
         progress: undefined,
         theme: "dark",
-        transition:Zoom
+        transition: Zoom,
       });
     }
   };
@@ -72,7 +75,6 @@ const Contact: FC = () => {
         id="contact"
         className="mx-auto mt-[200px] w-[80%] flex flex-col gap-10 justify-between  md:flex-row"
       >
-        
         <div className="flex flex-1 flex-col gap-5 ">
           <Reveal width="fit-content">
             <h1 className="text-4xl md:text-7xl font-bold  bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
@@ -162,7 +164,7 @@ const Contact: FC = () => {
               placeholder="Your email"
               type="email"
             />
-            
+
             {errors?.email && (
               //@ts-expect-error:MUST
               <p className="text-red-500 text-sm">{errors.email.message}</p>
@@ -182,7 +184,7 @@ const Contact: FC = () => {
               type="submit"
               className="w-full p-[10px] rounded-xl bg-[#6953a1] text-white"
             >
-              Send
+              {isLoading ? "Please wait" : "Send"}
             </button>
           </motion.form>
         </div>
