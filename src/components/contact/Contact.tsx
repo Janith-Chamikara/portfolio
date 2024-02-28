@@ -7,7 +7,7 @@ import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
-
+import {  Zoom } from 'react-toastify';
 const formSchema = z.object({
   name: z
     .string()
@@ -39,6 +39,7 @@ const Contact: FC = () => {
         }
       );
       toast.success("Email sended successfully.", {
+        className:"bg-transparent backdrop-blur-xl",
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -46,11 +47,13 @@ const Contact: FC = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "light",
+        theme: "dark",
+        transition:Zoom
       });
       reset();
     } catch (err) {
       toast.error("Error occured :(", {
+        className:"bg-transparent backdrop-blur-xl",
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -58,7 +61,8 @@ const Contact: FC = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "light",
+        theme: "dark",
+        transition:Zoom
       });
     }
   };

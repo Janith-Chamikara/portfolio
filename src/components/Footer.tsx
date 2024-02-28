@@ -5,7 +5,7 @@ const Footer: FC = () => {
     <>
       <div className="mt-[100px] w-full h-[65px]  z-50 px-10">
         <div className="flex flex-row justify-center items-center">
-          <span className="text-sm text-white">
+          <span className="text-sm text-white text-center">
             © 2024{" "}
             <a
               href="https://www.linkedin.com/in/janith-chamikara/"
