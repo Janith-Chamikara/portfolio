@@ -24,7 +24,9 @@ export const TracingBeam = ({
 
   // track velocity of scroll to increase or decrease distance between svg gradient y coordinates.
   const scrollYProgressVelocity = useVelocity(scrollYProgress);
-  const [velo, setVelocity] = React.useState(0);
+  
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [_, setVelocity] = React.useState(0);
 
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -39,6 +41,7 @@ export const TracingBeam = ({
     return scrollYProgressVelocity.onChange((latestVelocity) => {
       setVelocity(latestVelocity);
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const y1 = useSpring(

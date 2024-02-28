@@ -149,7 +149,8 @@ const Contact: FC = () => {
               placeholder="Your name"
               type="text"
             />
-            {errors?.name && (
+            {errors.name && (
+              //@ts-expect-error:MUST
               <p className="text-red-500 text-sm">{errors.name.message}</p>
             )}
             <input
@@ -158,7 +159,9 @@ const Contact: FC = () => {
               placeholder="Your email"
               type="email"
             />
+            
             {errors?.email && (
+              //@ts-expect-error:MUST
               <p className="text-red-500 text-sm">{errors.email.message}</p>
             )}
             <textarea
@@ -168,6 +171,7 @@ const Contact: FC = () => {
               placeholder="Message"
             />
             {errors?.message && (
+              //@ts-expect-error:MUST
               <p className="text-red-500 text-sm">{errors.message.message}</p>
             )}
             <button
