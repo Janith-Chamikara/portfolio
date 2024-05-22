@@ -27,14 +27,7 @@ const Hero: FC = () => {
               <Meteors number={20} />
               <Reveal width="fit-content" className="mx-auto">
                 <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-                  An aspiring engineering undergraduate at the University of
-                  Ruhuna, Sri Lanka, deeply interested in web development.
-                  Dedicated to simplicity, innovation, and ongoing advancement,
-                  I possess strong skills in the latest web development
-                  technologies, crafting engaging digital experiences.
-                </p>
-              </Reveal>
-              <div className="mt-[20px] mx-auto  max-w-[200px] flex flex-row gap-2 justify-center items-center text-sm md:text:lg">
+                  I'm an engineering undergraduate at the University of Ruhuna, Sri Lanka, with a strong passion for web, app, and software development. I am an active open-source contributor focused on creating simple, innovative, and engaging digital experiences using the latest technologies.
                 <a
                   href="https://www.linkedin.com/in/janith-chamikara/"
                   className="inline-flex h-8  items-center justify-center rounded-md border border-slate-800 px-3 md:px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
