@@ -64,6 +64,7 @@ export const projects = [
     description:
       "Empower Academy offers a practical MERN stack platform with Chakra UI and Framer Motion animations, making online education accessible and enjoyable. Switch effortlessly between Dark Mode and Light Mode for a personalized experience. Key features include secure transactions, real-time communication via Nodemailer, easy resource management with Cloudinary, an intuitive Admin Panel, and a robust Learning Management System.",
     imgLink: empowerAcademy,
+    live:"https://lms-frontend-ruddy.vercel.app/",
     linkedin:
       "https://www.linkedin.com/posts/janith-chamikara_empoweracademy-mernstack-activity-7167417905733718016-fGqK?utm_source=share&utm_medium=member_desktop",
     yt: "https://youtu.be/wwZABPAmIVM?si=HWfEZo9rdA6_PLHZ",
