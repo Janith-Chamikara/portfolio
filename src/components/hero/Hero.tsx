@@ -27,7 +27,7 @@ const Hero: FC = () => {
               <Meteors number={20} />
               <Reveal width="fit-content" className="mx-auto">
                 <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-                   I'm an engineering undergraduate at the University of Ruhuna, Sri Lanka, with a strong passion for web, app, and software development. I am an active open-source contributor focused on creating simple, innovative, and engaging digital experiences using the latest technologies.
+                   I'm an engineering undergraduate at the University of Ruhuna, Sri Lanka, with a strong passion for web, app, and software development. Also I am an active open-source contributor focused on creating simple, innovative, and engaging digital experiences using the latest technologies.
                 </p>
               </Reveal>
               <div className="mt-[20px] mx-auto  max-w-[200px] flex flex-row gap-2 justify-center items-center text-sm md:text:lg">
