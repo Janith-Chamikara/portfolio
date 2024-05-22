@@ -53,6 +53,14 @@ const Projects: FC = () => {
                     />
                   </CardItem>
                   <div className="flex justify-between items-center mt-20">
+                    {project.live && (
+                      <CardItem
+                        translateZ={20}
+                        className="px-4 py-2 rounded-xl text-white text-xs font-bold"
+                      >
+                        <a href={project.live}>Live →</a>
+                      </CardItem>
+                    )}
                     {project.yt && (
                       <CardItem
                         translateZ={20}
